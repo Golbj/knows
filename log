@@ -1,58 +1,3 @@
-uname -a
-111554 aa
-113244 date
-if  条件
-then
- Command
-else
- Command
-fi
-115438 12
-115710 12
-121602 ----------------------------------->
-#这里的-d 参数判断$myPath是否存在 
-if [ ! -d "$myPath"]; then 
- mkdir "$myPath" 
-fi 
-121754 ----------------------------------->
-ln是linux中又一个非常重要命令，它的功能是为某一个文件在另外一个位置建立一个同不的链接，这个命令最常用的参数是-s，具体用法是：ln –s 源文件 目标文件。
-　　当我们需要在不同的目录，用到相同的文件时，我们不需要在每一个需要的目录下都放一个必须相同的文件，我们只要在某个固定的目录，放上该文件，然后在 其它的目录下用ln命令链接（link）它就可以，不必重复的占用磁盘空间。例如：ln –s /bin/less /usr/local/bin/less
-　　-s 是代号（symbolic）的意思。
-
-121929 ----------------------------------->
-ln是linux中
-
-121946 ----------------------------------->
-ln是linux中
-
-122054 ---------------------------------------------------------------------->
-指令详细说明
-　　指令名称 : ln
-　　使用权限 : 所有使用者
-　　使用方式 : ln [options] source dist，其中 option 的格式为 :
-　　[-bdfinsvF] [-S backup-suffix] [-V {numbered,existing,simple}]
-　　[--help] [--version] [--]
-
-122235 ---------------------------------------------------------------------->
-指令详细说明
-　　指令名称 : ln
-　　使用权限 : 所有使用者
-　　使用方式 : ln [options] source dist，其中 option 的格式为 :
-　　[-bdfinsvF] [-S backup-suffix] [-V {numbered,existing,simple}]
-　　[--help] [--version] [--]
-
-start---------------------------------------------------------------------->
-122454
-指令详细说明
-　　指令名称 : ln
-　　使用权限 : 所有使用者
-　　使用方式 : ln [options] source dist，其中 option 的格式为 :
-　　[-bdfinsvF] [-S backup-suffix] [-V {numbered,existing,simple}]
-　　[--help] [--version] [--]
-end------------------------------------------------------------------------>
-
-start---------------------------------------------------------------------->
-125019
 [ grep简介: ]
 
 grep是用来过滤含有特定字符的行, 能使用正则表达式搜索文本, 它在数据中查找一个字符串时, 是以正行为单位进行数据选取的. 用法: grep [cinvs] 'pattern' file 例如: grep -n 'bbb' aaa.txt --color # 从文件aaa.txt中搜索关键词bbb, 并显示行号和高亮显示。
@@ -97,5 +42,3 @@ grep '\bTom\b' aaa.txt --color # 从文件aaa.txt中查找含有单词Tom的行,
 grep '\(tom\)...\1' aaa.txt --color # 从文件aaa.txt中查找tom, 且它的后面有三个字符, 然后还有一个tom的行. 如: tomxxxtom
 12. \{n\} 表示前面的字符要出现n次
 grep 'tomx\{3\}' aaa.txt --color # 从文件aaa.txt中查找tomx, x要出现3次, 如: tomxxx grep 'tomx\{3,\}' aaa.txt --color # 从文件aaa.txt中查找tomx, x至少要出现三次, 如tomxxx 或 tomxxxx grep 'tomx\{3,4\}' aaa.txt --color # 从文件aaa.txt中查找tomx, x出现3次或4次, 如tomxxx 或 tomxxxx
-
-end------------------------------------------------------------------------>
